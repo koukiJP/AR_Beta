@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="toc-AM-Xtz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="toc-AM-Xtz">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,33 +12,51 @@
         <!--Home-->
         <scene sceneID="bm0-75-ddC">
             <objects>
-                <viewController id="Xq6-TV-cMM" sceneMemberID="viewController">
+                <viewController id="Xq6-TV-cMM" customClass="HomeViewController" customModule="AR_Beta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jb2-LH-6MX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhZ-jF-cqn">
+                                <rect key="frame" x="313" y="652" width="55" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="tray.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="InteractionPressed:" destination="Xq6-TV-cMM" eventType="touchUpInside" id="QCQ-vQ-TbL"/>
+                                </connections>
+                            </button>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OwK-zt-YlW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </sceneKitView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JBU-gq-6rb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="20E-qJ-Oq8"/>
+                    <navigationItem key="navigationItem" title="Home" id="dx5-P5-Jhv"/>
+                    <connections>
+                        <outlet property="sceneView" destination="OwK-zt-YlW" id="eoH-2j-MVg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOO-NB-Ekq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2380" y="-813"/>
+            <point key="canvasLocation" x="2379.7101449275365" y="-813.58695652173924"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="L5M-Vt-hPX">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="toc-AM-Xtz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a29-JU-drm">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="a29-JU-drm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabBar" destination="a29-JU-drm" id="M3N-Cd-ZAD"/>
                         <segue destination="HoG-SE-za2" kind="relationship" relationship="viewControllers" id="ejk-nr-1bc"/>
                         <segue destination="mSI-T5-Unr" kind="relationship" relationship="viewControllers" id="Jhf-PO-UL6"/>
-                        <segue destination="cOa-k4-SCb" kind="relationship" relationship="viewControllers" id="beY-Yo-T6N"/>
                         <segue destination="JgZ-N2-Opw" kind="relationship" relationship="viewControllers" id="fgT-5x-Mu6"/>
                     </connections>
                 </tabBarController>
@@ -103,34 +121,27 @@
         <!--Out-->
         <scene sceneID="exa-9M-WxD">
             <objects>
-                <viewController id="26p-SI-T3G" sceneMemberID="viewController">
+                <viewController id="26p-SI-T3G" customClass="OutViewController" customModule="AR_Beta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="91M-bQ-aYv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-IX-Jcr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a1H-zh-acN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Out" id="oe9-P4-L2w"/>
+                    <connections>
+                        <outlet property="sceneView" destination="tI8-IX-Jcr" id="8lh-f4-7P2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khy-aI-muz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2380" y="1801"/>
-        </scene>
-        <!--Interaction-->
-        <scene sceneID="PGX-bk-3sZ">
-            <objects>
-                <viewController id="cOa-k4-SCb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iBF-f2-naY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="iId-AI-weU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Interaction" image="hand.raised" catalog="system" id="OmU-ss-ik9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IY6-V3-SV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1119" y="902"/>
+            <point key="canvasLocation" x="2380" y="1088"/>
         </scene>
         <!--Out-->
         <scene sceneID="91P-F6-JHt">
@@ -149,14 +160,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqd-zS-RB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118.840579710145" y="1800.8152173913045"/>
+            <point key="canvasLocation" x="1119" y="1088"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrowshape.right" catalog="system" width="128" height="104"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
-        <image name="hand.raised" catalog="system" width="128" height="128"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="tray.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

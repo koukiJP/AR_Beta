@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4D24C0294762D4006D3DE1 /* SelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4D24BF294762D4006D3DE1 /* SelectorViewController.xib */; };
+		2A4D24C2294762E2006D3DE1 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D24C1294762E2006D3DE1 /* SelectorViewController.swift */; };
 		2AD01E9E293632440045ABFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD01E9D293632440045ABFF /* AppDelegate.swift */; };
 		2AD01EA0293632440045ABFF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD01E9F293632440045ABFF /* art.scnassets */; };
-		2AD01EA2293632440045ABFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD01EA1293632440045ABFF /* ViewController.swift */; };
+		2AD01EA2293632440045ABFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD01EA1293632440045ABFF /* HomeViewController.swift */; };
 		2AD01EA5293632440045ABFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD01EA3293632440045ABFF /* Main.storyboard */; };
 		2AD01EA7293632450045ABFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD01EA6293632450045ABFF /* Assets.xcassets */; };
 		2AD01EAA293632450045ABFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD01EA8293632450045ABFF /* LaunchScreen.storyboard */; };
+		2AFAFAB929423B6E00EE44D7 /* OutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAFAB829423B6E00EE44D7 /* OutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4D24BF294762D4006D3DE1 /* SelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorViewController.xib; sourceTree = "<group>"; };
+		2A4D24C1294762E2006D3DE1 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		2AD01E9A293632440045ABFF /* AR_Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AR_Beta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD01E9D293632440045ABFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AD01E9F293632440045ABFF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		2AD01EA1293632440045ABFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AD01EA1293632440045ABFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2AD01EA4293632440045ABFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AD01EA6293632450045ABFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD01EA9293632450045ABFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AFAFAB829423B6E00EE44D7 /* OutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			children = (
 				2AD01EA8293632450045ABFF /* LaunchScreen.storyboard */,
 				2AD01EA3293632440045ABFF /* Main.storyboard */,
+				2A4D24BF294762D4006D3DE1 /* SelectorViewController.xib */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -48,7 +55,9 @@
 		2208C60929363CF50059A43A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2AD01EA1293632440045ABFF /* ViewController.swift */,
+				2AD01EA1293632440045ABFF /* HomeViewController.swift */,
+				2AFAFAB829423B6E00EE44D7 /* OutViewController.swift */,
+				2A4D24C1294762E2006D3DE1 /* SelectorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,6 +150,7 @@
 			files = (
 				2AD01EA0293632440045ABFF /* art.scnassets in Resources */,
 				2AD01EAA293632450045ABFF /* LaunchScreen.storyboard in Resources */,
+				2A4D24C0294762D4006D3DE1 /* SelectorViewController.xib in Resources */,
 				2AD01EA7293632450045ABFF /* Assets.xcassets in Resources */,
 				2AD01EA5293632440045ABFF /* Main.storyboard in Resources */,
 			);
@@ -153,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD01EA2293632440045ABFF /* ViewController.swift in Sources */,
+				2AD01EA2293632440045ABFF /* HomeViewController.swift in Sources */,
+				2AFAFAB929423B6E00EE44D7 /* OutViewController.swift in Sources */,
+				2A4D24C2294762E2006D3DE1 /* SelectorViewController.swift in Sources */,
 				2AD01E9E293632440045ABFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V4529UV377;
+				DEVELOPMENT_TEAM = 9PX23UAXQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Isaac;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Lv1Yi.AR-Beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V4529UV377;
+				DEVELOPMENT_TEAM = 9PX23UAXQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -348,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Isaac;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Lv1Yi.AR-Beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
